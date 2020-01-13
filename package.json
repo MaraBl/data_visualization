@@ -1,0 +1,23 @@
+{
+  "name": "datavisualization",
+  "version": "1.0.0",
+  "description": "https://marabl.github.io/data_visualization/",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:html",
+    "init-project": "npm install && npm run init:dirs && npm run init:files && npm run init:gitignore",
+    "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaraBl/data_visualization.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaraBl/data_visualization/issues"
+  },
+  "homepage": "https://github.com/MaraBl/data_visualization#readme",
+  "devDependencies": {}
+}
