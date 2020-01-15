@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
 
 * {
   box-sizing: border-box;
@@ -99,29 +100,49 @@ p {
 
 /*vizualization*/
 
-.box {
+.bar-circle {
   display: inline-block;
+  margin: 30px 20px 30px 180px ;
 }
 
-.progress {
-  width: 100px;
-  height: 100px;
+.progress-circle {
+  width: 150px;
+  height: 150px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Work Sans', sans-serif;
 }
 
-.progress > .inner {
+.progress-circle > .inner-circle {
   position: absolute;
-  color: red; 
+  color: black;
 }
 
-.progress > svg {
+.progress-circle > svg {
   height: 100%;
   display: block;
 }
 
+.counter-inside {
+  font-size: 65px;
+  width:70px;
+  border-radius: 50%;
+  height:70px;
+  margin: 0;
+  padding: 0;
+}
+
+.counter-inside2 {
+  font-size:18px;
+  width:20px;
+  border-radius: 50%;
+  height:20px;
+  color: grey;
+  font-weight: 400;
+  padding-left: 20px;;
+}
 
 
 /* MEDIA QUERIES*/

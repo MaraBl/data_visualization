@@ -19,5 +19,9 @@
     "url": "https://github.com/MaraBl/data_visualization/issues"
   },
   "homepage": "https://github.com/MaraBl/data_visualization#readme",
-  "devDependencies": {}
+  "devDependencies": {},
+  "dependencies": {
+    "countup.js": "^2.0.4",
+    "progressbar.js": "^1.1.0"
+  }
 }
