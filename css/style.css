@@ -6,11 +6,10 @@
   box-sizing: border-box;
 }
 
-html,body {
+html, body {
   margin:0;
   padding:0;
 }
-
 
 body {
   position: relative;
@@ -32,10 +31,14 @@ p {
 [class*="col-"] {
   padding: 0;
 }
+
+.text-bold {
+  font-weight: 700;
+}
+
 .sidenav {
   font-family: 'Montserrat', sans-serif;
   height: 100%;
-  min-width: 18%;
   position: fixed;
   top: 0;
   left: 0;
@@ -68,7 +71,7 @@ p {
 
 
 .overview {
-  margin-left: 18%;
+  margin-left: 18%; 
 }
 
 .overview h1 {
@@ -76,7 +79,7 @@ p {
   font-size: 30px;
   color: #676767;
   letter-spacing: 2px;
-  padding: 40px;
+  padding: 30px 40px 15px 40px;
 }
 
 
@@ -87,6 +90,8 @@ p {
 
 .data h2 {
   font-size: 20px;
+  margin-top: 10px;
+  padding: 3px;
   font-weight: 700;
 }
 
@@ -94,15 +99,20 @@ p {
   padding-left: 40px;
 }
 .data__callinformation p {
-  padding: 5px 0;
+  padding: 5px;
+
 }
 
 
 /*vizualization*/
 
+.data__callvizualization {
+  padding-left: 40px;
+}
+
 .bar-circle {
   display: inline-block;
-  margin: 30px 20px 30px 180px ;
+  margin: 30px 20px 30px 140px;
 }
 
 .progress-circle {
@@ -145,14 +155,102 @@ p {
 }
 
 
+.data__breakdown {
+  padding: 20px 40px 0 40px;
+}
+
+ul {
+ list-style: none;
+ margin:0;
+ padding:0;
+}
+
+ul li {
+  float: left;
+  margin: 10px 0px 10px 0;
+  padding: 10px 7% 10px 0;
+  text-align: center;
+}
+.square-icon {
+  width: 15px;
+  height: 15px;
+  background-color: yellow;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Safari 3-8 */
+  transform: rotate(45deg);
+  float: left;
+  margin: 5px 10px 0 0;
+}
+
+/*data breakdown*/
+ 
+.data__breakdown {
+  font-size: 14px;
+}
+
+
+/*Progress bar-line*/
+
+.bar-line {
+  margin: 10px 0;
+}
+
+.bar-line h3 {
+  font-size: 14px;
+  margin-top: 5px;
+  padding: 3px;
+  font-weight: 700;
+}
+
+.progress-bar-blue {
+      background-color: #1a8ddd !important;
+}
+
+.progress-bar-green {
+      background-color: #35ddb3 !important;
+}
+
+.progress-bar-yellow {
+      background-color: #dddc61 !important;
+}
+
+.progress-bar-orange {
+      background-color: #dd6844 !important;
+}
+
+.progress-bar-purple {
+      background-color: #8f71dd !important;
+}
+
+.progress-bar-grey {
+  background-color: #CCCC !important
+}
+
+
+.progress.active .progress-bar {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+
+
 /* MEDIA QUERIES*/
 
 @media (max-width: 767.98px) { 
+.sidenav {position: static; height: auto; width: 100%;padding: 40px 0;}
+.overview {margin: 0;}
+.overview h1 {padding: 25px;}
+.data h2 {margin-top: 20px;}
+.data__callinformation {padding: 30px;}
+.data__callvizualization {padding: 30px;}
+.data h2 {margin-top: 20px;}
+
+.bar-circle {margin: 50px;}
 
 }
 
-@media (max-width: 991.98px) {
-
+@media(min-width: 768px) and (max-width: 991px) {
+.overview {margin-left: 25%;}
+.data h2 {margin-top: 20px;}
  }
 
 

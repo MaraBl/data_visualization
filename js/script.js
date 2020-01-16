@@ -41,3 +41,20 @@ window.onload = function onLoad() {
   progressBar.animate(percent);
 };
 
+
+//Progress bar-line//
+
+$(function() { 
+   $("#one").addClass("progress-bar-purple");
+   $("#two").addClass("progress-bar-blue");
+   $("#three").addClass("progress-bar-yellow");
+   $("#four").addClass("progress-bar-green");
+   $("#five").addClass("progress-bar-oragne");
+});
+
+let newWidthAdherence = "15%";
+
+$(".progress-bar").animate({
+    width: newWidthAdherence
+}, 1000);
+
