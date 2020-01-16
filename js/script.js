@@ -1,8 +1,11 @@
-  let numberOne = 21;
-  let numberTwo = 28;
+//Progress bar circle//
+
+
+ let numberOne = 21;
+ let numberTwo = 28;
 document.getElementById("allCalls").innerHTML = "/ " + numberTwo ;
 
-$('.counter-inside').each(function() {
+$('.counter-inside--big').each(function() {
   let $this = $(this),
       countTo = numberOne;
   $({ countNum: $this.text()}).animate({
@@ -11,7 +14,7 @@ $('.counter-inside').each(function() {
 
   {
 
-    duration: 2000,
+    duration: 1000,
     easing:'linear',
     step: function() {
       $this.text(Math.floor(this.countNum));
@@ -25,7 +28,6 @@ $('.counter-inside').each(function() {
 });
 
 
-
 window.onload = function onLoad() {
   let progressBar = 
     new ProgressBar.Circle('#progress-circle', {
@@ -33,7 +35,7 @@ window.onload = function onLoad() {
       strokeWidth: 6,
       trailColor: "grey",
       trailWidth: 6,
-      duration: 2000,
+      duration: 1000,
       easing: 'easeInOut'
     });
   
@@ -45,11 +47,11 @@ window.onload = function onLoad() {
 //Progress bar-line//
 
 $(function() { 
-   $("#one").addClass("progress-bar-purple");
-   $("#two").addClass("progress-bar-blue");
-   $("#three").addClass("progress-bar-yellow");
-   $("#four").addClass("progress-bar-green");
-   $("#five").addClass("progress-bar-oragne");
+   $("#one").addClass("progress-bar--purple");
+   $("#two").addClass("progress-bar--blue");
+   $("#three").addClass("progress-bar--yellow");
+   $("#four").addClass("progress-bar--green");
+   $("#five").addClass("progress-bar--oragne");
 });
 
 let newWidthAdherence = "15%";

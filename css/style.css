@@ -36,6 +36,9 @@ p {
   font-weight: 700;
 }
 
+
+/*Navigation*/
+
 .sidenav {
   font-family: 'Montserrat', sans-serif;
   height: 100%;
@@ -69,6 +72,7 @@ p {
   font-weight: 900;
 }
 
+/*Overview*/
 
 .overview {
   margin-left: 18%; 
@@ -104,7 +108,7 @@ p {
 }
 
 
-/*vizualization*/
+/*vizualization bar circle*/
 
 .data__callvizualization {
   padding-left: 40px;
@@ -135,7 +139,7 @@ p {
   display: block;
 }
 
-.counter-inside {
+.counter-inside--big {
   font-size: 65px;
   width:70px;
   border-radius: 50%;
@@ -144,7 +148,7 @@ p {
   padding: 0;
 }
 
-.counter-inside2 {
+.counter-inside--small {
   font-size:18px;
   width:20px;
   border-radius: 50%;
@@ -155,8 +159,12 @@ p {
 }
 
 
+/*data breakdown*/
+
+
 .data__breakdown {
   padding: 20px 40px 0 40px;
+  font-size: 14px
 }
 
 ul {
@@ -171,21 +179,16 @@ ul li {
   padding: 10px 7% 10px 0;
   text-align: center;
 }
+
 .square-icon {
   width: 15px;
   height: 15px;
   background-color: yellow;
-  -ms-transform: rotate(45deg); /* IE 9 */
-  -webkit-transform: rotate(45deg); /* Safari 3-8 */
+  -ms-transform: rotate(45deg); 
+  -webkit-transform: rotate(45deg); 
   transform: rotate(45deg);
   float: left;
   margin: 5px 10px 0 0;
-}
-
-/*data breakdown*/
- 
-.data__breakdown {
-  font-size: 14px;
 }
 
 
@@ -202,30 +205,33 @@ ul li {
   font-weight: 700;
 }
 
-.progress-bar-blue {
+.progress {
+  cursor: pointer;
+}
+
+.progress-bar--blue {
       background-color: #1a8ddd !important;
 }
 
-.progress-bar-green {
+.progress-bar--green {
       background-color: #35ddb3 !important;
 }
 
-.progress-bar-yellow {
+.progress-bar--yellow {
       background-color: #dddc61 !important;
 }
 
-.progress-bar-orange {
+.progress-bar--orange {
       background-color: #dd6844 !important;
 }
 
-.progress-bar-purple {
+.progress-bar--purple {
       background-color: #8f71dd !important;
 }
 
-.progress-bar-grey {
+.progress-bar--grey {
   background-color: #CCCC !important
 }
-
 
 .progress.active .progress-bar {
     -webkit-transition: none !important;
@@ -243,7 +249,6 @@ ul li {
 .data__callinformation {padding: 30px;}
 .data__callvizualization {padding: 30px;}
 .data h2 {margin-top: 20px;}
-
 .bar-circle {margin: 50px;}
 
 }
